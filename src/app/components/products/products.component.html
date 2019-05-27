@@ -1,0 +1,48 @@
+<!-- <ul *ngFor="let product of products">
+  <li>
+    {{ product.productID }}
+    {{ product.productName }}
+    {{ product.productDescription }}
+    {{ product.productPrice }}
+    {{ product.productQuantity }}
+  </li>
+</ul> -->
+
+<!-- <div class="jumbotron">
+  <h1 class="display-3">Jumbo heading</h1>
+  <p class="lead">Jumbo helper text</p>
+  <hr class="my-2">
+  <h3>Liste des produits</h3>
+  <ul>
+    <li *ngFor="let product of products">{{ product }}</li>
+  </ul>
+  </div> -->
+
+  <div class="card">
+    <div class="card-header bg-info text-white">
+      Header
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered table-striped">
+          <thead>
+             <tr>
+               <th>Product ID</th>
+               <th>Product Name</th>
+               <th>Unit Price</th>
+             </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let product of products">
+              <td scope="row">{{ product.productID }}</td>
+              <td>{{ product.productName }}</td>
+              <td>{{ product.productPrice }}</td>
+            </tr>
+            <tr>
+              <td scope="row"></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
